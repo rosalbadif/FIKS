@@ -1,6 +1,11 @@
 var windowWidth = window.innerWidth;
 var cont=0;
 
+// gsap.registerPlugin(ScrollTrigger);
+
+const nav=document.querySelector("nav");
+
+//horizontal scroll
 var horizontalLength = document.querySelector(".element-wrapper").scrollWidth;
 console.log(horizontalLength)
 
@@ -10,6 +15,8 @@ var scrollDistance = distFromTop + horizontalLength - windowWidth;
 
 document.querySelector(".horizontal-section").style.height = horizontalLength + "px";
 
+document.getElementById("nav").style.height = window.innerHeight;
+
 window.onscroll=function() {
     var scrollTop = window.pageYOffset;
     if(scrollTop >=distFromTop && scrollTop <=scrollDistance) {
@@ -17,15 +24,37 @@ window.onscroll=function() {
     }
 }
 
+//hamburger menu
 function openNav() {
     cont++;
     if(cont%2==0){
         document.getElementById("nav").style.right = "-100%";
-        // document.getElementById("scrittemenù1").style.opacity = 0;
-        // document.getElementById("scrittemenù2").style.opacity = 0;
     }else{
         document.getElementById("nav").style.right = "0";
-        // document.getElementById("scrittemenù1").style.opacity = 100;
-        // document.getElementById("scrittemenù2").style.opacity = 100;
     }
 }
+
+//change header color on scroll
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY)
+    if(window.scrollY >=750){
+        nav.classList.add("active_nav")
+    }
+   
+    else{
+        nav.classList.remove("active_nav")
+    }
+})
+
+//remove header on scroll
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY)
+    if(window.scrollY >=3550){
+        nav.classList.add("remove_nav")
+    }
+   
+    else{
+        nav.classList.remove("remove_nav")
+    }
+})
+
