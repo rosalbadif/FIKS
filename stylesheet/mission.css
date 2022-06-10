@@ -245,47 +245,70 @@ nav {
 
  
 
-    /* FOOTER */
+/* FOOTER */
 footer {
-    background-color: #7629c3;
-    padding: 40px;
+  background-color: #fff;
+  padding: 40px;
+
+}
+
+footer h3 {
+  font-family: "montserrat";
+  font-style: normal;
+  color: black;
+  font-size: min(2.5vw,20px);
+}
+
+footer p{
+  font-family: "bigdailyshort-semilight";
+  font-style: normal;
+  font-size: min(1.25vw,10px);
+  line-height: 2;
+  color: black;
+}
+
+footer a{
+  font-family: "bigdailyshort-semilight";
+  font-style: normal;
+  font-size: min(1.25vw,10px);
+  line-height: 1.5;
+  color: black;
+}
+
+footer a:hover{
   
+  color: #7629c3;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width:20px;
+  height: 20px;
+
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
   }
-  
   footer h3 {
-    font-family: "montserrat";
-    font-style: normal;
-    color: #fff;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   
   footer p{
-    font-family: "bigdailyshort-semilight";
-    font-style: normal;
-    font-size: 1.25vw;
-    line-height: 2;
-    color: #fff;
+    font-size: 1.5vw;
   }
   
   footer a{
-    font-family: "bigdailyshort-semilight";
-    font-style: normal;
-    font-size: 1.25vw;
-    line-height: 1.5;
-    color: #fff;
+    font-size: 1.5vw;
   }
-  
-  footer a:hover{
-    color: black;
+
+  .column {
+    padding-bottom:20px;
   }
-  
-  .row {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .logo {
-    width:20px;
-    height: 20px;
-  }
+}
     

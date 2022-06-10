@@ -387,28 +387,29 @@ footer {
 footer h3 {
   font-family: "montserrat";
   font-style: normal;
-  color: #fff;
-  font-size: 2.5vw;
+  color: white;
+  font-size: min(2.5vw,20px);
 }
 
 footer p{
   font-family: "bigdailyshort-semilight";
   font-style: normal;
-  font-size: 1.25vw;
+  font-size: min(1.25vw,10px);
   line-height: 2;
-  color: #fff;
+  color: white;
 }
 
 footer a{
   font-family: "bigdailyshort-semilight";
   font-style: normal;
-  font-size: 1.25vw;
+  font-size: min(1.25vw,10px);
   line-height: 1.5;
-  color: #fff;
+  color: white;
 }
 
 footer a:hover{
-  color: black;
+  
+  color: #ccc;
 }
 
 .row {
@@ -419,5 +420,26 @@ footer a:hover{
 .logo {
   width:20px;
   height: 20px;
+
 }
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  footer h3 {
+    font-size: 3vw;
+  }
   
+  footer p{
+    font-size: 1.5vw;
+  }
+  
+  footer a{
+    font-size: 1.5vw;
+  }
+
+  .column {
+    padding-bottom:20px;
+  }
+}
