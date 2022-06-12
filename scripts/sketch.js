@@ -7,7 +7,7 @@ const nav=document.querySelector("nav");
 
 //horizontal scroll
 var horizontalLength = document.querySelector(".element-wrapper").scrollWidth;
-console.log(horizontalLength)
+// console.log(horizontalLength)
 
 var distFromTop = document.querySelector(".horizontal-section").offsetTop;
 
@@ -36,7 +36,7 @@ function openNav() {
 
 //change header color on scroll
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if(window.scrollY >=750){
         nav.classList.add("active_nav")
     }
@@ -48,13 +48,13 @@ window.addEventListener("scroll", () => {
 
 //remove header on scroll
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY)
-    if(window.scrollY >=3550){
-        nav.classList.add("remove_nav")
+   
+    if(window.scrollY >=document.querySelector(".overview").offsetTop){
+        nav.classList.remove("active_nav")
     }
    
-    else{
-        nav.classList.remove("remove_nav")
-    }
+    // else{
+    //     nav.classList.remove("remove_nav")
+    // }
 })
 

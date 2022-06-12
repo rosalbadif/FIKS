@@ -11,10 +11,11 @@
 
 let tl = gsap.timeline({
     scrolltrigger: {
-        trigger: ".element",
-        start:"center bottom",
+        trigger: ".hero-container",
+        start:"bottom top"
     }
 })
 
 tl.from(".img", {x: -400, opacity:0, duration:1.5}, )
     .from(".feature", {y:400, opacity:0, duration:1},"-=1" )
+    .from(".description", {y:400, opacity:0, duration:1},"-=1" )

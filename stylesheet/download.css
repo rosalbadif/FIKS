@@ -43,49 +43,52 @@ body {
   h1 { color: black}
   
   .big-text{
-    font-size:7vw; 
+    font-size:min(7vw, 60px); 
     font-family: 'bigdailyshort-regular';
     font-weight: bold; 
     color:#8207C4; 
-    margin-left: 0px; 
+    margin-left: 30px; 
   
   }
     
-  .med-text{font-size:40px;}
-  
-  /* .small-text {
-    font-size:; 
+  .med-text{
+    font-size:clamp(32px,5vw,40px);
     font-family: 'bigdailyshort-regular';
-    font-weight: bold; 
-    color:#7629c3; 
+    color:#8207C4; 
     margin-left: 30px; 
-  } */
+  }
   
-  .intr-text{
-    text-transform:uppercase; 
-    font-size:20px; 
-    /* font-weight:bold;
-    font-family: 'montserrat-regular'; */
+  .small-text{
+    font-size:clamp(18px,3vw,24px);
+    font-family: 'montserrat';
+    text-align:center;
+    color:#8207C4; 
+  }
+  
+  .description {
+    color:white;
+    font-family: "montserrat";
+    text-align: left;
+    font-size: 12px;
   }
   
   .button {
     padding:8px 30px;  
-    color: white; 
+    color: #8207C4; 
     display:inline-block; 
     border: #8207C4; 
     border-style:solid; 
     border-radius:20px ;
-    background:#8207C4; 
+    background:white; 
     font-size:15px; 
     font-family: 'Montserrat';
     font-weight:normal;
     font-style: normal;
-    
   }
   
   .button:hover{
-    background-color:white ;
-    color: #8207C4;
+    background-color:#8207C4 ;
+    color: #fff;
   }
   
   canvas {
@@ -100,19 +103,21 @@ body {
     
   }
   
-/* HEADER */
-
-nav {
+  
+  /* HEADER */
+  
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 10vh;
-    padding: 0 3 rem;
+    min-height: 8vh;
     position: fixed;
     width: 100vw;
     transition: 200ms ease-in-out background-color;
     z-index: 10;
-    /* background-color: #fff; */
+    background-color: #fff;
+    box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2);
+  
   }
   
   .logo a{
@@ -123,8 +128,7 @@ nav {
   }
   
   .logo a:hover{
-    color:#8207C4;
-    transform: scale(1.5);
+    color:#7629c3;
   }
   
   
@@ -146,6 +150,11 @@ nav {
     color:#8207C4;
   }
   
+  nav .menu a:active {
+    color:#8207C4;
+  }
+  
+  
   #download {
     border: black;
     border-style: solid;
@@ -164,6 +173,10 @@ nav {
   
   .active_nav {
     background-color: #8207C4;
+    box-shadow: 0px 0px;
+    transition: 200ms ease-in-out background-color;
+    box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2);
+  
   }
   
   .active_nav .menu a, 
@@ -184,11 +197,13 @@ nav {
   
   .active_nav #download:hover {
     background-color: white;
-    color:#8207C4;
+    color:#7629c3;
   }
   
   .remove_nav {
     opacity: 0;
+    transition: 200ms ease-in-out ;
+  
   }
   
   /* HAMBURGER MENU */
@@ -242,97 +257,44 @@ nav {
       background: white;
   }
   }
-
-/* HERO */
-.hero{
-  background-color: white;
-  width:100vw; 
-  height:80vh;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-
-.hero__content{
-  width:100vw;
-  max-width:1350px;
-  /* margin-top:100px; */
-  margin-left:0px ;
-  text-align: center;
-
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-/* FOOTER */
-footer {
-  background-color: #fff;
-  padding: 40px;
-
-}
-
-footer h3 {
-  font-family: "montserrat";
-  font-style: normal;
-  color: black;
-  font-size: min(2.5vw,20px);
-}
-
-footer p{
-  font-family: "bigdailyshort-semilight";
-  font-style: normal;
-  font-size: min(1.25vw,10px);
-  line-height: 2;
-  color: black;
-}
-
-footer a{
-  font-family: "bigdailyshort-semilight";
-  font-style: normal;
-  font-size: min(1.25vw,10px);
-  line-height: 1.5;
-  color: black;
-}
-
-footer a:hover{
   
-  color: #8207C4;
-}
-
-.row {
-  display: flex;
-  justify-content: space-around;
-}
-
-.logo {
-  width:20px;
-  height: 20px;
-
-}
-
-@media (max-width: 576px) {
-  .row {
+  
+  /* HOME */
+  .hero__container {
+    height: 100vh;
+  }
+  .hero{
+    background-color: white;
+    width:100vw; 
+    height:80vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero__content{
+    width:100vw;
+    max-width:1350px;
+    /* margin:0 auto;  */
+    margin-top:100px;
+    margin-left: 20px;
+    display:flex;
     flex-direction: column;
-  }
-  footer h3 {
-    font-size: 3vw;
-  }
-  
-  footer p{
-    font-size: 1.5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
   }
   
-  footer a{
-    font-size: 1.5vw;
+  
+  
+  
+ .hero img {
+    max-width: 20%;
+    min-width: 15%;
+    height: auto;
+    padding: 30px;
+    align-self: flex-end;
   }
-
-  .column {
-    padding-bottom:20px;
-  }
-}
-    
+  
+ 
+  

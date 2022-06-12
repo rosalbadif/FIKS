@@ -12,56 +12,56 @@
         url('fonts/bigdailyshortweb-regular-TRIAL.eot?#iefix') format('embedded-opentype'),
         url('fonts/bigdailyshortweb-regular-TRIAL.woff') format('woff');
       }
-  @font-face {
-  font-family: 'bigdailyshort-semilight';
+@font-face {
+font-family: 'bigdailyshort-semilight';
+  src: 
+    url('fonts/bigdailyshortweb-semilight-TRIAL.eot?#iefix') format('embedded-opentype'),
+    url('fonts/bigdailyshortweb-semilight-TRIAL.woff') format('woff');
+    }
+@font-face {
+  font-family: 'bigdailyshort-semilightitalic';
+  src: 
+    url('fonts/bigdailyshortweb-semilightitalic-TRIAL.eot?#iefix') format('embedded-opentype'),
+    url('fonts/bigdailyshortweb-semilightitalic-TRIAL.woff') format('woff');
+    }
+
+@font-face {
+  font-family: 'bigdailyshort-bold';
     src: 
-      url('fonts/bigdailyshortweb-semilight-TRIAL.eot?#iefix') format('embedded-opentype'),
-      url('fonts/bigdailyshortweb-semilight-TRIAL.woff') format('woff');
-      }
-  @font-face {
-   font-family: 'bigdailyshort-semilightitalic';
-    src: 
-      url('fonts/bigdailyshortweb-semilightitalic-TRIAL.eot?#iefix') format('embedded-opentype'),
-      url('fonts/bigdailyshortweb-semilightitalic-TRIAL.woff') format('woff');
+      url('fonts/bigdailyshortweb-bold-TRIAL.eot?#iefix') format('embedded-opentype'),
+      url('fonts/bigdailyshortweb-bold-TRIAL.woff') format('woff');
       }
 
+/* montserrat */
   @font-face {
-    font-family: 'bigdailyshort-bold';
-      src: 
-        url('fonts/bigdailyshortweb-bold-TRIAL.eot?#iefix') format('embedded-opentype'),
-        url('fonts/bigdailyshortweb-bold-TRIAL.woff') format('woff');
-        }
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Italic.eot');
+    src: url('fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+    
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.eot');
+    src: url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
-      /* montserrat */
-      @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Italic.eot');
-        src: url('fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
-            url('fonts/Montserrat-Italic.woff') format('woff');
-        font-weight: normal;
-        font-style: italic;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-SemiBold.eot');
-        src: url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-            url('fonts/Montserrat-SemiBold.woff') format('woff');
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Regular.eot');
-        src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-            url('fonts/Montserrat-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 /*base style*/
@@ -79,49 +79,52 @@ a {text-decoration: none;}
 h1 { color: black}
 
 .big-text{
-  font-size:min(7vw, 72px); 
+  font-size:min(7vw, 60px); 
   font-family: 'bigdailyshort-regular';
   font-weight: bold; 
-  color:#7629c3; 
+  color:#8207C4; 
   margin-left: 30px; 
 
 }
   
-.med-text{font-size:40px;}
-
-/* .small-text {
-  font-size:; 
+.med-text{
+  font-size:clamp(32px,5vw,40px);
   font-family: 'bigdailyshort-regular';
-  font-weight: bold; 
-  color:#7629c3; 
+  color:#8207C4; 
   margin-left: 30px; 
-} */
+}
 
-.intr-text{
-  text-transform:uppercase; 
-  font-size:20px; 
-  /* font-weight:bold;
-  font-family: 'montserrat-regular'; */
+.small-text{
+  font-size:clamp(18px,3vw,24px);
+  font-family: 'montserrat';
+  text-align:center;
+  color:#8207C4; 
+}
+
+.description {
+  color:white;
+  font-family: "montserrat";
+  text-align: left;
+  font-size: 12px;
 }
 
 .button {
   padding:8px 30px;  
-  color: white; 
+  color: #8207C4; 
   display:inline-block; 
-  border: #7629c3; 
+  border: #8207C4; 
   border-style:solid; 
   border-radius:20px ;
-  background:#7629c3; 
+  background:white; 
   font-size:15px; 
   font-family: 'Montserrat';
   font-weight:normal;
   font-style: normal;
-  
 }
 
 .button:hover{
-  background-color:white ;
-  color: #7629c3;
+  background-color:#8207C4 ;
+  color: #fff;
 }
 
 canvas {
@@ -143,13 +146,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 10vh;
-  padding: 0 3 rem;
+  min-height: 8vh;
   position: fixed;
   width: 100vw;
   transition: 200ms ease-in-out background-color;
   z-index: 10;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2); */
+  /* opacity: 0.5; */
 }
 
 .logo a{
@@ -160,8 +164,7 @@ nav {
 }
 
 .logo a:hover{
-  color:#7629c3;
-  transform: scale(1.5);
+  color:#8207C4;
 }
 
 
@@ -180,8 +183,13 @@ nav {
 }
 
 .menu a:hover {
-  color:#7629c3;
+  color:#8207C4;
 }
+
+nav .menu a:active {
+  color:#8207C4;
+}
+
 
 #download {
   border: black;
@@ -200,7 +208,11 @@ nav {
 }  */
 
 .active_nav {
-  background-color: #7629c3;
+  background-color: rgba(130, 7, 196, 0.8);
+  box-shadow: 0px 0px;
+  transition: 200ms ease-in-out background-color;
+  /* box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2); */
+
 }
 
 .active_nav .menu a, 
@@ -221,11 +233,13 @@ nav {
 
 .active_nav #download:hover {
   background-color: white;
-  color:#7629c3;
+  color:#8207C4;
 }
 
 .remove_nav {
   opacity: 0;
+  transition: 200ms ease-in-out ;
+
 }
 
 /* HAMBURGER MENU */
@@ -329,13 +343,14 @@ nav {
 /* FEATURES */
 .horizontal-section{
   padding: 100px 0;
-  background-color: #7629c3;
+  background-color: #8207C4;
 }
 .sticky-wrapper {
   width: 100%;
   overflow:hidden;
   position: sticky;
   top: 100px;
+  /* padding-left: 70px; */
 }
 
 .element-wrapper{
@@ -359,31 +374,33 @@ nav {
   overflow: hidden;
   
   z-index: 1;
+  padding-bottom: 20px;
 }
 
 
 .img {
-  width: 40%;
+  width: 50vw;
   position: relative;
   /* left:0; */
-  /* z-index: -10; */
+  /* z-index: 10; */
   max-width: 200px;
-  /* margin-top: 20px;*/
-  
-  
+  margin-bottom: 20px;
 }
 
-.content {
+.element .content {
+  width:30vw;
   margin-left:20px;
   padding:30px;
 }
 
 .feature {
   color: white;
-  /* margin-left:250px; */
-  font-size: 5vw;
+  font-size:min(5vw, 60px); 
   text-align: left;
 }
+
+
+
 
 @media (max-width: 576px) {
   .element-wrapper .element{
@@ -408,7 +425,7 @@ nav {
   padding:10px;
   height: 50vh;
   text-align: left;
-  color:#7629c3;
+  color:#8207C4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,13 +446,29 @@ nav {
   padding: 30px;
 }
 
+#element1 {
+  margin-top: 50px;
+}
 
+/* VIDEO */
+.video {
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+}
+#video {
+  margin-top:20px;
+  margin-bottom:40px;
+  width:80vw;
+  height: 45vw;
 
-
-
+  border: solid;
+  border-color: black;
+  border-radius: 3vw;
+}
 
 /* RECENSIONI */
-
 .wrapper{
   height: 100vh;
   position: relative;
@@ -444,14 +477,12 @@ nav {
   padding-left: 70px;
   padding-top: 70px;
 
-  background: #7629c3;
+  background: #8207C4;
   overflow-x: auto;
-  
 }
 
 .wrapper::-webkit-scrollbar {
   width: 0;
-
 }
 
 .review {
@@ -461,7 +492,7 @@ nav {
   background-color: #fff;
   margin: 0 20px 0 0; 
   flex-shrink:0;
-  border:#7629c3;
+  border:#8207C4;
   border-radius: 30px;
   border-style:solid;
   flex-wrap: wrap;
@@ -497,13 +528,13 @@ footer h3 {
   font-family: "montserrat";
   font-style: normal;
   color: black;
-  font-size: min(2.5vw,20px);
+  font-size: min(16px,2.5vw,20px);
 }
 
 footer p{
   font-family: "bigdailyshort-semilight";
   font-style: normal;
-  font-size: min(1.25vw,10px);
+  font-size: clamp(8px,1.25vw,10px);
   line-height: 2;
   color: black;
 }
@@ -511,14 +542,14 @@ footer p{
 footer a{
   font-family: "bigdailyshort-semilight";
   font-style: normal;
-  font-size: min(1.25vw,10px);
+  font-size: clamp(8px,1.25vw,10px);
   line-height: 1.5;
   color: black;
 }
 
 footer a:hover{
   
-  color: #7629c3;
+  color: #8207C4;
 }
 
 .row {
@@ -537,15 +568,15 @@ footer a:hover{
     flex-direction: column;
   }
   footer h3 {
-    font-size: 3vw;
+    font-size: max(3vw,18px);
   }
   
   footer p{
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 9px);
   }
   
   footer a{
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 9px);
   }
 
   .column {
