@@ -478,22 +478,23 @@ header{
   display: block;
   padding: 5px 20px;
   text-decoration: none;
-  color:#8207C4;
+  color:#000;
   cursor: pointer;
-  border: 1px solid #8207C4;
+  border: 1px solid #000;
   border-radius: 20px;
   font-family: "montserrat";
 }
 
 .tabs .tab:hover a[data-switcher]{
-  background-color: #8207C4;
-  color:white;
-  
+  color:#8207C4;
+  border:2px solid #8207C4;
 }
 
 .tabs .tab.is-active a[data-switcher]{
   background-color: #8207C4;
   color:white;
+  border-color: #8207C4;
+  font-weight: 600;
 }
 
 main {
@@ -530,7 +531,7 @@ main {
   height: 20vh;
 
   margin: 10px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
