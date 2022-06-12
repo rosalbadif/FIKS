@@ -6,6 +6,8 @@
     <title>Mission</title>
     <link rel="stylesheet" href="stylesheet/guidelines.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
   </head>
 
   <body>
@@ -42,7 +44,7 @@
           <p class="description">Fiks ti parla come farebbe un* amic*. </p>
         </div>
         <div class="column">
-          <p class="small-text"s>APERTO</p>
+          <p class="small-text">APERTO</p>
           <p class="description">Fiks rompe i tabù sul sesso e la malattia. e non so scrivere cazzooooo</p>
         </div>
       </div>
@@ -136,32 +138,60 @@
   <div class="swiper-pagination"></div>
 </div>
 
-<section>
-  <ul class="uk-subnav uk-subnav-pill mr-5 ml-5 mt-5" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-    <li style="font-family: ANR-demi;"><a href="#">Logo</a></li>
-    <li style="font-family: ANR-demi;"><a href="#">Font</a></li>
-    <li style="font-family: ANR-demi;"><a href="#">Color Palette</a></li>
-    <li style="font-family: ANR-demi;"><a href="#">3D Models</a></li>
-  </ul>
+<!-- SWITCHER -->
+<header>
+  <div id="subnav">
+    <ul class="tabs">
+      <li class="tab is-active">
+        <a data-switcher data-tab="1">Logo</a>
+      </li>
+      <li class="tab">
+        <a data-switcher data-tab="2">Palette</a>
+      </li>
+      <li class="tab">
+        <a data-switcher data-tab="3">Font</a>
+      </li>
+    </ul>
+  </div>
+</header>
 
-<ul class="uk-switcher uk-margin">
-  <li>Hello!</li>
-  <li>Hello again!</li>
-  <li>Bazinga!</li>
-</ul>
-</section>
+  <main>
+    <section class="pages">
+      <div class="page is-active" data-page="1">
+        <h2>Page 1</h2>
 
-  <!-- <div class="row" id="font">
-    <div class="column">
-      <img src="assets/getapp.png" alt="">
+      </div>
+      <div class="page" data-page="2">
+        <div class="colors">
+          <div class="color">
+            <div class="box" id="color1"></div>
+            <p class="description">#000000</p>
+          </div>
+          <div class="color">
+            <div class="box" id="color2"></div>
+            <p class="description">#FFFFFF</p>
+          </div>
+          <div class="color">
+            <div class="box" id="color3"></div>
+            <p class="description">#8207C4</p>
+          </div>
+          <div class="color">
+            <div class="box" id="color4"></div>
+            <p class="description">#FF5C1E</p>
+          </div>
+          <div class="color">
+            <div class="box" id="color5"></div>
+            <p class="description">#F8D6E4</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="column">
-      <img src="assets/getapp.png" alt="">
-    </div>
-    <div class="column">
-      <img src="assets/getapp.png" alt="">
-    </div>
-  </div> -->
+      <div class="page" data-page="3">
+        <h2>Page 3</h2>
+      </div>
+    </section>
+  </main>
+
 
 </div>
  
@@ -192,9 +222,10 @@
 
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
- <script src="scripts/sketch.js"></script>
  <script src="scripts/cards.js"></script>
  <script src="scripts/swiper.js"></script>
+ <script src="scripts/sketch.js"></script>
+ <script src="scripts/switcher.js"></script>
 
   </body>
 </html> 
