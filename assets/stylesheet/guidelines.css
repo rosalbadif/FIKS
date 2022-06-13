@@ -2,9 +2,9 @@
 /* montserrat */
 @font-face {
   font-family: 'Montserrat';
-  src: url('assets/stylesheet/fonts/Montserrat-Medium.eot');
-  src: url('assets/stylesheet/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-      url('assets/stylesheet/fonts/Montserrat-Medium.woff') format('woff');
+  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot');
+  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/stylesheet/fonts/Montserrat-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -12,9 +12,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('assets/stylesheet/fonts/Montserrat-SemiBold.eot');
-    src: url('assets/stylesheet/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('assets/stylesheet/fonts/Montserrat-SemiBold.woff') format('woff');
+    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot');
+    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/stylesheet/fonts/Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -22,9 +22,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('assets/stylesheet/fonts/Montserrat-Regular.eot');
-    src: url('assets/stylesheet/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('assets/stylesheet/fonts/Montserrat-Regular.woff') format('woff');
+    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot');
+    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/stylesheet/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -33,9 +33,9 @@
 /* bigdailyshort */
 @font-face {
   font-family: 'Big Daily Short';
-  src: url('assets/stylesheet/fonts/BigDailyShort-Regular.eot');
-  src: url('assets/stylesheet/fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
-      url('assets/stylesheet/fonts/BigDailyShort-Regular.woff') format('woff');
+  src: url('../assets/stylesheet/fonts/BigDailyShort-Regular.eot');
+  src: url('../assets/stylesheet/fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/stylesheet/fonts/BigDailyShort-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,8 @@ body {
   font-family: 'Big Daily Short';
   margin: 0px;
   padding: 0;
-  width:100vw;
+  /* width:100vw; */
+  /* overflow: hidden; */
 }
 
 a {text-decoration: none;}
@@ -64,6 +65,12 @@ h2{
   font-size:clamp(32px,5vw,40px);
   font-family: 'Big Daily Short';
   color:#fff; 
+}
+
+.purple{
+  font-size:clamp(32px,5vw,40px);
+  font-family: 'Big Daily Short';
+  color:#8207C4; 
 }
 
 h3{
@@ -332,17 +339,43 @@ nav .menu a:active {
   margin-bottom:10px;
 } */
 
+@media (max-width: 576px) {
+  .guidelines__content{
+    margin-top: 70px;
+  }
+  .guidelines .row {
+    width:50vw;
+    padding:0px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .guidelines .column {
+    width:50vw;
+  }
+}
+
 
 /* CARDS SWIPER */
+#swiper__container {
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
+}
+
 .swiper {
   height: 100vh;
   width:100vw;
   background-color: #8207C4;
+
+  overflow: hidden;
 }
 
 .swiper-wrapper {
   max-width: 100vw;
 }
+
 .swiper-pagination {
   padding-bottom: 60px;
 }
@@ -372,6 +405,10 @@ nav .menu a:active {
   opacity: 0;
 }
 
+.swiper-slide .card .swiper-slide-active .swiper-slide-visible{
+  margin: 0;
+}
+
 .swiper-slide.card {
   margin-top:100px;
   margin-bottom: 40px;
@@ -398,9 +435,9 @@ nav .menu a:active {
 /* CARD FLIP */
 
 .card__inner {
-  width:40vw;
-  min-width: 300px;
-  max-width: 350px; 
+  width:35vw;
+  min-width: 262px;
+  max-width: 305px; 
   height: 60vw;
   min-height: 450px;
   max-height: 525px;
@@ -418,8 +455,8 @@ nav .menu a:active {
 
 .card__face {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
@@ -447,14 +484,41 @@ nav .menu a:active {
   transform: rotateY(180deg);
 }
 
-.card__content {
-  width: 100%;
-  height: 100%;
-}
+
 
 .guideline {
   display: block;
-  width:70vw;
+  width:35vw;
+  min-width: 262px;
+  max-width: 305px; 
+  height: 60vw;
+  min-height: 450px;
+  max-height: 525px;
+}
+
+@media (max-width: 576px) {
+  .card__inner {
+    width:35vw;
+    min-width: 262px;
+    max-width: 305px; 
+    height: 60vw;
+    min-height: 450px;
+    max-height: 525px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .guideline {
+    display: block;
+    width:35vw;
+    min-width: 262px;
+    max-width: 305px; 
+    height: 60vw;
+    min-height: 450px;
+    max-height: 525px;
+  }
 }
 
 /* SWITCHER */
@@ -508,7 +572,7 @@ header{
 main {
   padding-left: 30px;
   padding-right:30px;
-  height: 50vh;
+  height: 40vh;
 }
 
 .pages {
@@ -645,8 +709,42 @@ main {
   font-family: "Big Daily Short";
 }
 
+h3 .fontdisplay {
+  text-align: left;
+}
+
 #bigdailyshort {
   font-family: "Big Daily Short";
+}
+
+@media (max-width: 576px) {
+  header {
+    height: 5vh;
+    margin: 20px 15px;
+  }
+
+  main {
+    height: 90vh;
+  }
+
+  .fonts {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .font {
+    width: 80vw;
+  }
+
+  .colors {
+    flex-direction: column;
+  }
+
+  .color {
+    width: auto;
+    height: 10vh;
+    flex-direction: row;
+  }
 }
 
 
@@ -703,6 +801,7 @@ footer a:hover{
   }
   footer h3 {
     font-size: max(3vw,18px);
+    text-align:left;
   }
   
   footer p{

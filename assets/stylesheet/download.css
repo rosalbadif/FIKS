@@ -2,9 +2,9 @@
 /* montserrat */
 @font-face {
   font-family: 'Montserrat';
-  src: url('assets/stylesheet/fonts/Montserrat-Medium.eot');
-  src: url('assets/stylesheet/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-      url('assets/stylesheet/fonts/Montserrat-Medium.woff') format('woff');
+  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot');
+  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/stylesheet/fonts/Montserrat-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -12,9 +12,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('assets/stylesheet/fonts/Montserrat-SemiBold.eot');
-    src: url('assets/stylesheet/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('assets/stylesheet/fonts/Montserrat-SemiBold.woff') format('woff');
+    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot');
+    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/stylesheet/fonts/Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -22,9 +22,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('assets/stylesheet/fonts/Montserrat-Regular.eot');
-    src: url('assets/stylesheet/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('assets/stylesheet/fonts/Montserrat-Regular.woff') format('woff');
+    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot');
+    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/stylesheet/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -33,9 +33,9 @@
 /* bigdailyshort */
 @font-face {
   font-family: 'Big Daily Short';
-  src: url('assets/stylesheet/fonts/BigDailyShort-Regular.eot');
-  src: url('assets/stylesheet/fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
-      url('assets/stylesheet/fonts/BigDailyShort-Regular.woff') format('woff');
+  src: url('../assets/stylesheet/fonts/BigDailyShort-Regular.eot');
+  src: url('../assets/stylesheet/fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/stylesheet/fonts/BigDailyShort-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -280,6 +280,72 @@ nav .menu a:active {
 
   }
   
+  /* FOOTER */
+footer {
+  background-color: #fff;
+  padding: 40px;
+
+}
+
+footer h3 {
+  font-family: "montserrat";
+  font-style: normal;
+  color: black;
+  font-size: min(16px,2.5vw,20px);
+}
+
+footer p{
+  font-family: "bigdailyshort-semilight";
+  font-style: normal;
+  font-size: clamp(8px,1.25vw,10px);
+  line-height: 2;
+  color: black;
+}
+
+footer a{
+  font-family: "bigdailyshort-semilight";
+  font-style: normal;
+  font-size: clamp(8px,1.25vw,10px);
+  line-height: 1.5;
+  color: black;
+}
+
+footer a:hover{
+  
+  color: #8207C4;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width:20px;
+  height: 20px;
+
+}
+
+@media (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+  footer h3 {
+    font-size: max(3vw,18px);
+  }
+  
+  footer p{
+    font-size: max(1.5vw, 9px);
+  }
+  
+  footer a{
+    font-size: max(1.5vw, 9px);
+  }
+
+  .column {
+    padding-bottom:20px;
+  }
+}
   
  
   
