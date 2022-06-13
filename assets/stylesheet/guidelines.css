@@ -45,7 +45,7 @@
 body {
   background-color: white;
   color: white;
-  font-family: 'bigdailyshort-regular';
+  font-family: 'Big Daily Short';
   margin: 0px;
   padding: 0;
   width:100vw;
@@ -53,28 +53,27 @@ body {
 
 a {text-decoration: none;}
 
-h1 { color: black}
-
-.big-text{
+h1 {
   font-size:min(7vw, 60px); 
-  font-family: 'bigdailyshort-regular';
+  font-family: 'Big Daily Short';
   color:#8207C4; 
   margin-left: 30px; 
-
 }
   
-.med-text{
+h2{
   font-size:clamp(32px,5vw,40px);
-  font-family: 'bigdailyshort-regular';
-  color:#8207C4; 
+  font-family: 'Big Daily Short';
+  color:#fff; 
 }
 
-.small-text{
+h3{
   font-size:clamp(12px,3vw,16px);
   font-family: 'montserrat';
   text-align:center;
   color:#8207C4; 
 } 
+
+
 
 .description {
   color:white;
@@ -147,14 +146,15 @@ nav {
   /* opacity: 0.5; */
 }
 
-.logo a{
+#logo a{
   padding-left: 30px;
   color: black;
-  font-family: "bigdailyshort-regular";
+  font-family: "Big Daily Short";
+  font-size:24px;
   transition: 200ms ease-in-out color,
 }
 
-.logo a:hover{
+#logo a:hover{
   color:#8207C4;
 }
 
@@ -643,11 +643,11 @@ main {
 }
 
 .color .small-text #bigdailyshort{
-  font-family: "bigdailyshort-regular";
+  font-family: "Big Daily Short";
 }
 
 #bigdailyshort {
-  font-family: "bigdailyshort-regular";
+  font-family: "Big Daily Short";
 }
 
 
