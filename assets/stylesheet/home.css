@@ -59,7 +59,6 @@ h1 { color: black}
 .big-text{
   font-size:min(7vw, 60px); 
   font-family: 'bigdailyshort-regular';
-  font-weight: bold; 
   color:#8207C4; 
   margin-left: 30px; 
 
@@ -144,7 +143,7 @@ nav {
 .logo a{
   padding-left: 30px;
   color: black;
-  font-family: "bigdailyshort-bold";
+  font-family: "bigdailyshort-regular";
   transition: 200ms ease-in-out color,
 }
 
@@ -192,11 +191,10 @@ nav .menu a:active {
   color: white;
 }  */
 
-.active_nav {
+/* .active_nav {
   background-color: rgba(130, 7, 196, 0.8);
   box-shadow: 0px 0px;
   transition: 200ms ease-in-out background-color;
-  /* box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2); */
 
 }
 
@@ -225,7 +223,7 @@ nav .menu a:active {
   opacity: 0;
   transition: 200ms ease-in-out ;
 
-}
+} */
 
 /* HAMBURGER MENU */
 .hamburger {display: none;}
@@ -294,7 +292,7 @@ nav .menu a:active {
 }
 
 .hero__content{
-  width:100vw;
+  width:60vw;
   max-width:1350px;
   /* margin:0 auto;  */
   margin-top:100px;
@@ -312,9 +310,11 @@ nav .menu a:active {
 } */
 
 .hero img {
-  width:20%;
-  height: 20%;
-  padding: 30px;
+  height: 60vw;
+  max-height: 500px;
+  width:auto;
+  padding-top: 50px;
+  padding-right:30px;
 }
 
 .esplora {
@@ -329,19 +329,18 @@ nav .menu a:active {
 .horizontal-section{
   padding: 100px 0;
   background-color: #8207C4;
+
 }
 .sticky-wrapper {
   width: 100%;
   overflow:hidden;
   position: sticky;
   top: 100px;
-  /* padding-left: 70px; */
 }
 
 .element-wrapper{
   position: relative;
   display:flex;
-  /* padding-left: 70px; */
 }
 
 .element-wrapper .element {
@@ -359,7 +358,6 @@ nav .menu a:active {
   overflow: hidden;
   
   z-index: 1;
-  padding-bottom: 20px;
 }
 
 
@@ -369,12 +367,13 @@ nav .menu a:active {
   /* left:0; */
   /* z-index: 10; */
   max-width: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 
 .element .content {
   width:30vw;
   margin-left:20px;
+  margin-bottom: 120px;
   padding:30px;
 }
 

@@ -58,7 +58,6 @@ h1 { color: black}
 .big-text{
   font-size:min(7vw, 60px); 
   font-family: 'bigdailyshort-regular';
-  font-weight: bold; 
   color:#8207C4; 
   margin-left: 30px; 
 
@@ -151,7 +150,7 @@ nav {
 .logo a{
   padding-left: 30px;
   color: black;
-  font-family: "bigdailyshort-bold";
+  font-family: "bigdailyshort-regular";
   transition: 200ms ease-in-out color,
 }
 
@@ -195,44 +194,7 @@ nav .menu a:active {
   color: white;
 }
 
-/* #download a:hover {
-  color: white;
-}  */
 
-.active_nav {
-  background-color: rgba(130, 7, 196, 0.8);
-  box-shadow: 0px 0px;
-  transition: 200ms ease-in-out background-color;
-  /* box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2); */
-
-}
-
-.active_nav .menu a, 
-.active_nav .logo a{
-  color:white;
-}
-
-.active_nav .menu a:hover,
-.active_nav .logo a:hover {
-  color:#ff5c1e;
-}
-
-.active_nav #download {
-  border:white;
-  border-style: solid;
-  border-radius: 20px;
-}
-
-.active_nav #download:hover {
-  background-color: white;
-  color:#8207C4;
-}
-
-.remove_nav {
-  opacity: 0;
-  transition: 200ms ease-in-out ;
-
-}
 
 /* HAMBURGER MENU */
 .hamburger {display: none;}
@@ -249,7 +211,7 @@ nav .menu a:active {
     /* transform: translate(2.5rem, -4rem); */
   
     font-size: 30px;
-    font-weight: bold;
+    font-weight: normal;
     padding-top:20px;
     display: flex;
     flex-direction: column;
@@ -377,6 +339,10 @@ nav .menu a:active {
   height: 100vh;
   width:100vw;
   background-color: #8207C4;
+}
+
+.swiper-wrapper {
+  max-width: 100vw;
 }
 .swiper-pagination {
   padding-bottom: 60px;
