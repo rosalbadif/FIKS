@@ -1,13 +1,13 @@
 /* FONTS mettere da un'altra parteee*/
 /* montserrat */
 @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Italic.eot');
-    src: url('fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Montserrat-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url('Montserrat-Medium.eot');
+  src: url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -67,12 +67,21 @@ h1 { color: black}
 } 
 
 .description {
+  color:white;
+  font-family: "montserrat";
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.description-black {
   color:black;
   font-family: "montserrat";
   text-align: center;
   font-size: 12px;
   padding: 10px;
 }
+
 
 .button {
   padding:8px 30px;  
@@ -123,9 +132,9 @@ nav {
   width: 100vw;
   transition: 200ms ease-in-out background-color;
   z-index: 10;
-  background-color: #fff;
-  box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2);
-
+  background-color: rgba(255, 255, 255, 0.8);
+  /* box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2); */
+  /* opacity: 0.5; */
 }
 
 .logo a{
@@ -180,9 +189,10 @@ nav .menu a:active {
 }  */
 
 .active_nav {
-  background-color: #8207C4;
+  background-color: rgba(130, 7, 196, 0.8);
   box-shadow: 0px 0px;
   transition: 200ms ease-in-out background-color;
+  /* box-shadow: 5px 1px 6px 2px rgba(0, 0, 0, 0.2); */
 
 }
 
@@ -279,8 +289,8 @@ nav .menu a:active {
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
-  align-content: space-around;
 
 }
 
@@ -311,20 +321,36 @@ nav .menu a:active {
 
 .godown {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  height: 20vh;
+
+  width: 100vw;
+  height: 40vw;
+  padding:30px;
+
+  background-color: #8207C4;
+}
+
+.godown__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#amanti {
+  width:70vw;
+  z-index: 10;
 }
 
 #arrow {
-  color: black;
+  color: white;
   font-size: 30px;
-
+  animation: 2s ease-in-out infinite;
 }
 
 #arrow:hover {
-  color: #8207C4;
+  color: #ff5c1e;
 }
 /* .guidelines .column p {
   color:black;
@@ -338,6 +364,7 @@ nav .menu a:active {
 /* CARDS SWIPER */
 .swiper {
   height: 100vh;
+  width:100vw;
   background-color: #8207C4;
 }
 .swiper-pagination {
@@ -369,26 +396,27 @@ nav .menu a:active {
   opacity: 0;
 }
 
-
-/* .swiper-slide {
-  width: 100vw;
-  height: 100vh;
-  
-} */
-
 .swiper-slide.card {
   margin-top:100px;
   margin-bottom: 40px;
   height: 75vh;
   perspective: 1000px;
+
   display: flex;
   justify-content: center;
   align-items:center;
 }
 
-/* .swiper-button-next {
-  color: red;
-} */
+.swiper-slide.card .swiper-slide-shadow {
+  background-color: transparent;
+  width: 0;
+}
+
+.swiper-slide.card .swiper-slide-next {
+  background-color: transparent;
+  width: 0;
+}
+
 
 
 /* CARD FLIP */
@@ -396,15 +424,16 @@ nav .menu a:active {
 .card__inner {
   width:40vw;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 350px; 
   height: 60vw;
-  max-height: 600px;
   min-height: 450px;
+  max-height: 525px;
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
 }
+
 
 .card__inner.is-flipped {
   transform: rotateY(180deg);
@@ -453,10 +482,13 @@ nav .menu a:active {
 }
 
 /* SWITCHER */
+/* .switcher {
+  background-color: #8207C4;
+} */
 header{
-  background-color: #fff;
   height: 5vh;
-  padding:20px;
+  margin: 50px 15px;
+  padding:30px;
 }
 #subnav{
   height: auto;
@@ -471,7 +503,7 @@ header{
 }
 .tabs .tab {
   display: block;
-  padding-right:10px;
+  padding-right:30px;
 }
 
 .tabs .tab a[data-switcher] {
@@ -500,12 +532,12 @@ header{
 main {
   padding-left: 30px;
   padding-right:30px;
-  height: 30vh;
+  height: 50vh;
 }
 
 .pages {
-  margin-top:50px;
-  padding:50px 30px;
+  margin-top:0px;
+  /* padding:50px 30px; */
   border-radius:8px;
   background-color: transparent;
   /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2) ; */
@@ -582,6 +614,67 @@ main {
   margin:10px;
 }
 
+/* FONTS */
+
+.fonts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.font {
+  width:20vw;
+  height: fit-content;
+
+  margin: 10px;
+  padding:20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.type {
+  color:black;
+  text-align: left;
+  font-size: 14px;
+  padding-top:10px
+}
+
+#montserrat-regular {
+  font-family: "montserrat";
+  font-weight: normal;
+}
+
+#montserrat-medium {
+  font-family: "montserrat";
+  font-weight: 500;
+}
+
+#montserrat-semibold {
+  font-family: "montserrat";
+  font-weight: 600;
+}
+
+.font .small-text {
+  text-align:left;
+  font-size: 20px;
+}
+
+.color .small-text #bigdailyshort{
+  font-family: "bigdailyshort-regular";
+}
+
+#bigdailyshort {
+  font-family: "bigdailyshort-regular";
+}
+
+
+
 /* FOOTER */
 footer {
   background-color: #8207C4;
@@ -593,13 +686,13 @@ footer h3 {
   font-family: "montserrat";
   font-style: normal;
   color: white;
-  font-size: min(2.5vw,20px);
+  font-size: min(16px,2.5vw,20px);
 }
 
 footer p{
   font-family: "bigdailyshort-semilight";
   font-style: normal;
-  font-size: min(1.25vw,10px);
+  font-size: clamp(8px,1.25vw,10px);
   line-height: 2;
   color: white;
 }
@@ -607,14 +700,14 @@ footer p{
 footer a{
   font-family: "bigdailyshort-semilight";
   font-style: normal;
-  font-size: min(1.25vw,10px);
+  font-size: clamp(8px,1.25vw,10px);
   line-height: 1.5;
   color: white;
 }
 
 footer a:hover{
   
-  color: #ccc;
+  color: #8207C4;
 }
 
 .row {
@@ -633,15 +726,15 @@ footer a:hover{
     flex-direction: column;
   }
   footer h3 {
-    font-size: 3vw;
+    font-size: max(3vw,18px);
   }
   
   footer p{
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 9px);
   }
   
   footer a{
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 9px);
   }
 
   .column {

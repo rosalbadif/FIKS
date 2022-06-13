@@ -1,4 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
     slidesPerView: 1,
     spaceBetween: 30,
     keyboard: {

@@ -53,9 +53,14 @@ window.addEventListener("scroll", () => {
         nav.classList.remove("active_nav")
     }
    
-    // else{
-    //     nav.classList.remove("remove_nav")
-    // }
+    if (window.scrollY >=document.querySelector(".wrapper").offsetTop){
+        nav.classList.add("active_nav")
+    }
+
+    if (window.scrollY >=document.querySelector(".switcher").offsetTop){
+        nav.classList.remove("active_nav")
+    }
+    
 })
 
 
