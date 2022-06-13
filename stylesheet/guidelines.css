@@ -1,4 +1,4 @@
-/* FONTS mettere da un'altra parteee*/
+/* FONTS*/
 /* montserrat */
 @font-face {
   font-family: 'Montserrat';
@@ -28,6 +28,17 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+/* bigdailyshort */
+@font-face {
+  font-family: 'Big Daily Short';
+  src: url('BigDailyShort-Regular.eot');
+  src: url('BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+      url('BigDailyShort-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* base style */

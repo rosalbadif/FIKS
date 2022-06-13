@@ -1,67 +1,45 @@
   /* FONTS */
-  /* bigdailyshort */
-@font-face {
-  font-family: 'bigdailyshort-italic';
-    src: 
-     url('fonts/bigdailyshortweb-italic-TRIAL.eot?#iefix') format('embedded-opentype'),
-     url('fonts/bigdailyshortweb-italic-TRIAL.woff') format('woff');}
-
-@font-face {
-  font-family: 'bigdailyshort-regular';
-      src: 
-        url('fonts/bigdailyshortweb-regular-TRIAL.eot?#iefix') format('embedded-opentype'),
-        url('fonts/bigdailyshortweb-regular-TRIAL.woff') format('woff');
-      }
-@font-face {
-font-family: 'bigdailyshort-semilight';
-  src: 
-    url('fonts/bigdailyshortweb-semilight-TRIAL.eot?#iefix') format('embedded-opentype'),
-    url('fonts/bigdailyshortweb-semilight-TRIAL.woff') format('woff');
-    }
-@font-face {
-  font-family: 'bigdailyshort-semilightitalic';
-  src: 
-    url('fonts/bigdailyshortweb-semilightitalic-TRIAL.eot?#iefix') format('embedded-opentype'),
-    url('fonts/bigdailyshortweb-semilightitalic-TRIAL.woff') format('woff');
-    }
-
-@font-face {
-  font-family: 'bigdailyshort-bold';
-    src: 
-      url('fonts/bigdailyshortweb-bold-TRIAL.eot?#iefix') format('embedded-opentype'),
-      url('fonts/bigdailyshortweb-bold-TRIAL.woff') format('woff');
-      }
-
-/* montserrat */
+  /* montserrat */
   @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Italic.eot');
-    src: url('fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Montserrat-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-    
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-SemiBold.eot');
-    src: url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Montserrat-SemiBold.woff') format('woff');
-    font-weight: 600;
+    src: url('Montserrat-Medium.eot');
+    src: url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Regular.eot');
-    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Montserrat-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-SemiBold.eot');
+      src: url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+          url('fonts/Montserrat-SemiBold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+  }
+  
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Regular.eot');
+      src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+          url('fonts/Montserrat-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
+  
+  /* bigdailyshort */
+  @font-face {
+    font-family: 'Big Daily Short';
+    src: url('BigDailyShort-Regular.eot');
+    src: url('BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BigDailyShort-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+  }
 
 
 /*base style*/

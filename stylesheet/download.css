@@ -1,12 +1,13 @@
+/* FONTS*/
 /* montserrat */
 @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Italic.eot');
-    src: url('fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Montserrat-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url('Montserrat-Medium.eot');
+  src: url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +28,17 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+/* bigdailyshort */
+@font-face {
+  font-family: 'Big Daily Short';
+  src: url('BigDailyShort-Regular.eot');
+  src: url('BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+      url('BigDailyShort-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 /*base style*/
 body {
