@@ -267,7 +267,7 @@ nav .menu a:active {
     width:3vw;
     height: auto;
     padding: 30px;
-    margin:10px;
+    margin:30px;
 
     display: flex;
     justify-content: space-around;
@@ -275,9 +275,9 @@ nav .menu a:active {
   }
 
   #getapp {
-   
+    
     width:20vw;
-
+    margin-right: 50px;
   }
   
   /* FOOTER */

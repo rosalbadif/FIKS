@@ -80,7 +80,7 @@ body {
   } 
   
   .body {
-    font-size:clamp(16px,3vw,20px);
+    font-size:clamp(14px,3vw,16px);
     font-family: 'montserrat';
     text-align:left;
     color:#000;
@@ -90,14 +90,14 @@ body {
     color:white;
     font-family: "montserrat";
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .description-black {
     color:black;
     font-family: "montserrat";
     text-align: left;
-    font-size: 12px;
+    font-size:clamp(12px,2vw,14px);
   }
   
   .button {
@@ -322,11 +322,13 @@ nav .menu a:active {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .open {
   margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 0;
 
   color: #8207C4;
   font-size:min(5vw, 60px);
@@ -347,6 +349,7 @@ nav .menu a:active {
   text-align: left;
   font-size: 16px;
   max-height: 50px;
+  margin-top: 0;
 
 }
 

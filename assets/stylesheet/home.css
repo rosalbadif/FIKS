@@ -83,7 +83,7 @@ h3{
 } 
 
 .body {
-  font-size:clamp(16px,3vw,20px);
+  font-size:clamp(14px,3vw,16px);
   font-family: 'montserrat';
   text-align:left;
   color:#000;
@@ -93,14 +93,14 @@ h3{
   color:white;
   font-family: "montserrat";
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .description-black {
   color:black;
   font-family: "montserrat";
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .button {
