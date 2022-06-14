@@ -1,33 +1,13 @@
 /* FONTS*/
-/* montserrat */
+/* bigdailyshort */
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot');
-  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../assets/stylesheet/fonts/Montserrat-Medium.woff') format('woff');
-  font-weight: 500;
+  font-family: 'Big Daily Short';
+  src: url('fonts/BigDailyShort-Regular.eot');
+  src: url('fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/BigDailyShort-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot');
-    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../assets/stylesheet/fonts/Montserrat-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot');
-    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../assets/stylesheet/fonts/Montserrat-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 }
 
 /* bigdailyshort */
@@ -49,7 +29,7 @@ body {
   margin: 0px;
   padding: 0;
   /* width:100vw; */
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 a {text-decoration: none;}
@@ -176,7 +156,6 @@ nav {
   font-style: normal;
   font-weight: 600;
   /* background-color: #fff; */
-  
 }
 
 .menu a:hover {
@@ -319,7 +298,7 @@ nav .menu a:active {
 
 #amanti {
   width:70vw;
-  z-index: 10;
+  z-index: 0;
 }
 
 #arrow {
@@ -361,13 +340,14 @@ nav .menu a:active {
 #swiper__container {
   height: 100vh;
   width:100vw;
+  background-color: #8207C4;
+
   overflow: hidden;
 }
 
 .swiper {
-  height: 100vh;
+  height: 90vh;
   width:100vw;
-  background-color: #8207C4;
 
   overflow: hidden;
 }
@@ -377,7 +357,9 @@ nav .menu a:active {
 }
 
 .swiper-pagination {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  max-height: 10vh;
 }
 .swiper-pagination .swiper-pagination-bullet {
   height: 5px;
@@ -430,6 +412,16 @@ nav .menu a:active {
   width: 0;
 }
 
+#press {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#turn {
+  width: 4vw;
+}
+
 
 
 /* CARD FLIP */
@@ -460,14 +452,13 @@ nav .menu a:active {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
-  border:white;
-  border-style:solid;
+  border:1px solid #EBD1FF;
   border-radius: 16px;
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .card__face--front {
-  background-color: #8207C4;
+  background-color: #EBD1FF;
   display: flex;
   align-items: center;
   justify-content: center;

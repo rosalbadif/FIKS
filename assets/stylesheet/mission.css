@@ -1,41 +1,10 @@
 /* FONTS*/
-/* montserrat */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot');
-  src: url('../assets/stylesheet/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../assets/stylesheet/fonts/Montserrat-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot');
-    src: url('../assets/stylesheet/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../assets/stylesheet/fonts/Montserrat-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot');
-    src: url('../assets/stylesheet/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../assets/stylesheet/fonts/Montserrat-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 /* bigdailyshort */
 @font-face {
   font-family: 'Big Daily Short';
-  src: url('../assets/stylesheet/fonts/BigDailyShort-Regular.eot');
-  src: url('../assets/stylesheet/fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../assets/stylesheet/fonts/BigDailyShort-Regular.woff') format('woff');
+  src: url('fonts/BigDailyShort-Regular.eot');
+  src: url('fonts/BigDailyShort-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/BigDailyShort-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -64,12 +33,19 @@ body {
     font-family: 'Big Daily Short';
     color:#fff; 
   }
+
+  .h2montserrat{
+    font-size:clamp(32px,5vw,40px);
+    font-family: 'montserrat';
+    color:#fff; 
+    text-align: center;
+  }
   
   .purple{
     font-size:clamp(32px,5vw,40px);
     font-family: 'Big Daily Short';
     color:#8207C4; 
-    text-align: center;
+    text-align: left;
   }
   
   h3{
@@ -170,6 +146,8 @@ nav {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
+  z-index: 10;
+
   /* background-color: #fff; */
   
 }
@@ -256,6 +234,7 @@ nav .menu a:active {
   display: flex; 
   justify-content: flex-start;
   align-items: center;
+
 }
 
 .hero__content{
@@ -269,6 +248,7 @@ nav .menu a:active {
   justify-content: flex-start;
   align-items: center;
  
+
 }
 
 /* FEATURES */
@@ -365,7 +345,7 @@ nav .menu a:active {
   height: 70vh;
   padding: 30px;
   padding-top: 200px;
-
+  background-color: #8207C4;
 }
 #ricerca {
   width:40vw;
@@ -399,7 +379,7 @@ nav .menu a:active {
 .hovering{
   border: 1px solid #8207C4;
   border-radius: 30px;
-  color: #8207C4;
+  color: #fff;
   padding:0px 15px;  
   display:inline-block; 
   font-size:15px; 
@@ -409,8 +389,8 @@ nav .menu a:active {
 }
 
 .hovering:hover{
-  background-color:#8207C4 ;
-  color: white;
+  background-color:#fff ;
+  color: #8207C4;
 }
 
 .hovering:hover .column2 {
