@@ -10,12 +10,12 @@
 // })
 
 let tl = gsap.timeline({
-    scrolltrigger: {
-        trigger: ".hero-container",
-        start:"bottom top"
+    scrollTrigger: {
+        trigger: ".hero__container",
+        start:"bottom center"
     }
 })
 
-tl.from(".img", {x: -400, opacity:0, duration:1.5}, )
-    .from(".feature", {y:400, opacity:0, duration:1},"-=1" )
-    .from(".description", {y:400, opacity:0, duration:1},"-=1" )
+tl.from(".img", {x: -400, opacity:0, duration:1}, )
+    .from(".feature", {y:400, opacity:0, duration:1}, )
+    .from(".description", {y:400, opacity:0, duration:0.5},)

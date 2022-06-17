@@ -7,10 +7,14 @@
     <title>Fiks</title>
 
     <link rel="stylesheet" type="text/css" href="assets/stylesheet/home.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet/generali.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     
+    <link rel="icon" sizes="180x180" href="assets/images/stella.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -96,17 +100,42 @@
 
 
     <div class="overview">
+      <div id="perchi">
+      <div class="per" id="pazienti">
+        <div class="container" id="testoleft">
+        <h3 class="h3black">PER PAZIENTI</h3>
+        <h2 class="h2purple">Scopriti di più</h2>
+        <p class="description-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, labore maxime aut veritatis perferendis consequatur minus quas sint ipsam tempora enim ex, cumque vitae inventore eos optio quaerat magnam error.</p>
+        </div>  
+        <div class="container">
+          <img src="assets/images/stellanera.png" alt="" class="perimage">
+        </div>
+      </div>
+      <div class="per" id="partner">
+        <div class="container">
+          <img src="assets/images/stellanera.png" alt="" class="perimage">
+        </div>
+        <div class="container" id="testoright" >
+        <h3 class="h3black">PER PARTNER</h3>
+        <h2 class="h2purple">Scopri di più</h2>
+        <p class="description-black" id="partnertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, labore maxime aut veritatis perferendis consequatur minus quas sint ipsam tempora enim ex, cumque vitae inventore eos optio quaerat magnam error.</p>
+        </div>  
+        
+      </div>
+     
+    </div>
+  
       <h2 class="h2montserrat">Le funzionalità di fiks</h2>
       <div class="element" id="element1">
         <img src="assets/images/cards.svg" alt="icona delle cards">
         <div class="content" >
-        <h3>Approfondisci gli spunti delle cards</h3>
+        <h3>Spunti mirati e approfonditi</h3>
         <p class="description-black">Ogni card propone un’attività che può essere approfondita attraverso la spiegazione sul retro.</p>
       </div>
     </div>
     <div class="element">
       <div class="content">
-      <h3>Rivedi le tue cards preferite</h3>
+      <h3>Tutto in un unico posto</h3>
       <p class="description-black">L’archivio delle attività salvate permette di cercare le cards tramite i filtri di ricerca.</p>
       </div>
       <img src="assets/images/archive.svg" alt="icona dell'archivio">
@@ -114,13 +143,13 @@
     <div class="element">
       <img src="assets/images/star.svg" alt="icona dei preferiti">
       <div class="content">
-      <h3>Valuta le attività svolte</h3>
+      <h3>Le tue attività preferite</h3>
       <p class="description-black">Valuta le attività che hai provato e condividilo con il tuo partner. </p>
       </div>
     </div>
     <div class="element">
       <div class="content">
-      <h3>Personalizza il tuo profilo</h3>
+      <h3>Il tuo profilo personalizzato</h3>
       <p class="description-black">Personalizza il tuo profilo per scegliere cosa segnare della tua routine. </p>
     </div>   
        <img src="assets/images/profile.svg" alt="icona del profilo">
@@ -128,13 +157,13 @@
     <div class="element">
       <img src="assets/images/pro.svg" alt="icona di fiks pro">
       <div class="content">
-      <h3>Segui dei percorsi mirati</h3>
+      <h3>Percorsi mirati su misura per te</h3>
       <p class="description-black">Fiks PRO offre abbonamenti per svolgere corsi pro mirati a migliorare la propria condizione fisica o scoprire di più sulle patologie trattate.</p>
       </div>
     </div>
     <div class="element">
       <div class="content">
-      <h3>Contatta il tuo tutor</h3>
+      <h3>Le competenze di esperti, a tua disposizione</h3>
       <p class="description-black">I programmi sono scritti e seguiti da professionisti che puoi contattare in seguito come tutor. </p>
     </div>
     <img src="assets/images/calendar.svg" alt="icona del calendario">
@@ -142,8 +171,8 @@
     </div>
 
     <div class="video">
-      <video autoplay loop muted id="video">
-        <source src="assets/images/video1.mp4" type="video/mp4" >
+      <video loop id="video" controls>
+        <source src="assets/images/fiks.mp4" type="video/mp4" >
       </video>   
     </div>
       
@@ -192,8 +221,7 @@
     <!-- FOOTER -->
 
    <footer>
-     <div class="row">
-     </div>
+     
      <div class="row">
        <div class="column">
          <h3>DISCOVER</h3>
@@ -211,6 +239,12 @@
         <p>fiks@mail.de<br>1234567890</p>
        </div>
      </div>
+
+     <div class="row">
+       <p>©FIKS2022. All rights reserved.</p>
+       <img src="assets/images/stellanera.png" alt="" id="stella">
+
+    </div>
    </footer>
 
 
