@@ -176,7 +176,7 @@ canvas {
     margin-top: 60px;
   }
   .guidelines .row {
-    width:50vw;
+    width:70vw;
     padding:0px;
 
     display: flex;
@@ -184,7 +184,11 @@ canvas {
   }
 
   .guidelines .column {
-    width:50vw;
+    width:70vw;
+  }
+  .godown{
+    padding:30px 0 30px 0 ;
+
   }
 }
 

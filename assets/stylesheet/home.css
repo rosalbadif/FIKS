@@ -212,7 +212,7 @@ canvas {
 }
 
 .element .content {
-  width:30vw;
+  width:40vw;
   margin-left:20px;
   margin-bottom: 120px;
   padding:30px;
@@ -269,6 +269,7 @@ canvas {
 }
 
 #perchi{
+  height: 100vh;
   margin-top: 50px;
 
   display: flex;
@@ -281,7 +282,7 @@ canvas {
 .per {
   width: 70vw;
   max-width: 600px;
-  margin: 20px;
+  margin-top: 80px;
   padding:40px;
   background-color: #E8C0FE;
   border-radius: 25px;
@@ -300,7 +301,7 @@ canvas {
 
 
 .perimage{
-  width:100px;
+  width:150px;
 }
 
 #pazienti {
@@ -391,6 +392,10 @@ canvas {
   /* .overview .element img {
     margin-top: 50px;
   } */
+
+  .perimage{
+    width:100px;
+  }
 }
 
 

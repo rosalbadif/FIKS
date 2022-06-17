@@ -3,7 +3,6 @@ var cont=0;
 
 // gsap.registerPlugin(ScrollTrigger);
 
-const nav=document.querySelector("nav");
 
 //horizontal scroll
 // console.log(horizontalLength)
@@ -30,6 +29,8 @@ window.onscroll=function() {
 
 //hamburger menu
 function openNav() {
+    const nav=document.querySelector("nav");
+
     cont++;
     if(cont%2==0){
         document.getElementById("nav").style.right = "-100%";
@@ -39,33 +40,33 @@ function openNav() {
 }
 
 //change header color on scroll
-window.addEventListener("scroll", () => {
-    // console.log(window.scrollY)
-    if(window.scrollY >=750){
-        nav.classList.add("active_nav")
-    }
+// window.addEventListener("scroll", () => {
+//     // console.log(window.scrollY)
+//     if(window.scrollY >=750){
+//         nav.classList.add("active_nav")
+//     }
    
-    else{
-        nav.classList.remove("active_nav")
-    }
-})
+//     else{
+//         nav.classList.remove("active_nav")
+//     }
+// })
 
 //remove header on scroll
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
    
-    if(window.scrollY >=document.querySelector(".overview").offsetTop){
-        nav.classList.remove("active_nav")
-    }
+//     if(window.scrollY >=document.querySelector(".overview").offsetTop){
+//         nav.classList.remove("active_nav")
+//     }
    
-    if (window.scrollY >=document.querySelector(".wrapper").offsetTop){
-        nav.classList.add("active_nav")
-    }
+//     if (window.scrollY >=document.querySelector(".wrapper").offsetTop){
+//         nav.classList.add("active_nav")
+//     }
 
-    if (window.scrollY >=document.querySelector(".switcher").offsetTop){
-        nav.classList.remove("active_nav")
-    }
+//     if (window.scrollY >=document.querySelector(".switcher").offsetTop){
+//         nav.classList.remove("active_nav")
+//     }
     
-})
+// })
 
 
 

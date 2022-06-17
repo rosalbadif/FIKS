@@ -74,10 +74,10 @@ body {
   .description-purple {
     color:#8207C4;
     font-family: "montserrat";
-    text-align: justify;
+    /* text-align: justify; */
     font-size:clamp(12px,2vw,14px);
 
-    max-width: 500px;
+    max-width: 550px;
 
     /* padding: 30px; */
   }
@@ -86,7 +86,7 @@ body {
     margin: 5px;
     padding: 5px;
 
-    font-size: clamp(12px,2vw,14px);
+    font-size: clamp(12px,2.5vw,16px);
   }
 
   
@@ -260,8 +260,8 @@ display: flex;
 }
 
 .container {
-  height: fit-content;
-  padding: 50px;
+  height: 100vh;
+  padding: 30px 50px 50px 50px;
   /* padding-top: 50px; */
   background-color: #8207C4;
 
@@ -269,6 +269,17 @@ display: flex;
 }
 
 @media (max-width: 576px) {
+  .hero__content{
+    width:60vw;
+    max-width:1350px;
+    padding: 20px;
+    text-align: left;
+  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
   .element-wrapper .quote {
     width: 70vw;
     padding: 0;
@@ -282,6 +293,15 @@ display: flex;
   .quotation{
     display: flex;
     align-items: center;
+  }
+
+  .container {
+    height: 100vh;
+    padding: 30px 20px 20px 20px;
+    /* padding-top: 50px; */
+    background-color: #8207C4;
+  
+    text-align: center;
   }
 }
 /* SOLUZIONI */
@@ -349,8 +369,12 @@ display: flex;
 }
 
 @media (max-width: 576px) {
-  
+  .resolution{
+    padding:20px;
+  }
 }
+
+
 
 
 
